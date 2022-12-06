@@ -1,0 +1,46 @@
+.tools {
+	margin-top: 120px;
+	min-height: 975px;
+	&__title {
+		text-align: center;
+		position: relative;
+		@include before_circle;
+		&::before {
+			top: 12px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&__subtitle {
+		text-align: center;
+	}
+	.divider {
+		margin: 20px auto 0px;
+	}
+	&__wrapper {
+		margin: 50px auto 0;
+		max-width: 1120px;
+		min-height: 560px;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+		gap: 13px;
+	}
+	&__item {
+		padding: 30px 30px 0px 30px;
+		border: 1px solid #000000;
+	}
+	.webpack {
+		height: 80px;
+		margin-bottom: -14px;
+		margin-top: -10px;
+	}
+	.jquery {
+		margin-top: 14px;
+		margin-bottom: 14px;
+	}
+	&__text {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 18px;
+	}
+}

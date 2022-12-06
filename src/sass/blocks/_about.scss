@@ -1,0 +1,78 @@
+.about {
+	height: 800px;
+	&__wrapper {
+		margin-top: 120px;
+		height: 600px;
+		width: 1040px;
+		display: grid;
+		grid-template-columns: 400px 570px;
+		column-gap: 70px;
+		row-gap: 40px;
+	}
+	&__photo {
+		width: 400px;
+		height: 600px;
+		grid-row: 1 / 3;
+		img {
+			width: 400px;
+			height: 600px;
+		}
+	}
+	&__title {
+		margin-top: 6px;
+		line-height: 24px;
+		padding-left: 10px;
+		position: relative;
+		@include before_circle;
+		&::before {
+			top: -6px;
+		}
+	}
+	&__text {
+		margin-top: 20px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	&__item {
+		display: flex;
+		&-circle {
+			position: relative;
+			margin-left: 15px;
+			margin-right: 20px;
+			margin-top: 16px;
+			@include before_circle;
+			&::before {
+				top: -14px;
+				left: -16px;
+			}
+		}
+	}
+
+	&__skills {
+		width: 570px;
+		display: grid;
+		column-gap: 50px;
+		row-gap: 20px;
+		grid-template-columns: repeat(auto-fill, 260px);
+	}
+	&__content {
+		width: 200px;
+		&_text {
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 18px;
+		}
+		&_title {
+			line-height: 24px;
+			margin-bottom: 5px;
+		}
+	}
+}
+
+.divider {
+	width: 60px;
+	height: 2px;
+	background: $main_color;
+}

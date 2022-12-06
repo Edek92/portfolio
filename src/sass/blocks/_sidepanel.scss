@@ -1,0 +1,36 @@
+.sidepanel {
+	position: absolute;
+	top: 200px;
+	left: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 390px;
+	z-index: 4;
+	img:hover {
+		transform: scale(140%);
+		transition: all .3s;
+	}
+	&__divider {
+		width: 2px;
+		height: 70px;
+		background-color: #FFFFFF;
+	}
+	&__text {
+		height: 140px;
+		width: 25px;
+		span {
+			display: block;
+			width: 140px;
+			transform: rotate(-90deg) translate(-20%, -250%);
+			color: #FFFFFF;
+		}
+	}
+	.linkedin {
+		transform: rotate(-90deg);
+		&:hover {
+			transform: rotate(-90deg) scale(140%);
+		}
+	}
+}
