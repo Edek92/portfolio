@@ -59,6 +59,9 @@
 	}
 	&__content {
 		width: 200px;
+		&_margin {
+			margin-left: 9px;
+		}
 		&_text {
 			font-weight: 500;
 			font-size: 12px;
