@@ -1,2 +1,3 @@
-# portfolio
-This is information about me and my portfolio
+My portfolio:
+
+https://edek92.github.io/portfolio/dist/index.html
